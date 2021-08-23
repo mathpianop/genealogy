@@ -3,6 +3,7 @@ module Genealogy
     extend ActiveSupport::Concern
 
     module ClassMethods
+      #I plan to make changes here
 
       # Takes a splat argument of gclass objects and @return [ActiveRecord::Relation] of the first individual(s) to show up in the ancestors of the given people
       # It moves up one generation at a time for each individual, stopping when there is a shared ancestor id or when there are no more ancestors
